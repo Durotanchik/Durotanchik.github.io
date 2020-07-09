@@ -1,0 +1,624 @@
+/*Reset to zero*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+    margin: 0;
+    border: 0;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-ms-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li  {list-style-type: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+.wrapper {
+	max-width: 1180px;
+	font-family: 'LordOfTheRings';
+	font-weight: 500;
+	margin: auto auto;
+}
+
+/*Fonts_style*/
+@font-face {
+	font-family: 'LordOfTheRings';
+	src: url('../fonts/LordOfTheRings.eot');
+	src: local('☺'), url('../fonts/LordOfTheRings.woff') format('woff'), url('../fonts/LordOfTheRings.ttf') format('truetype'), url('../fonts/LordOfTheRings.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ALBERTUS';
+	src: url('../fonts/ALBERTUS.eot');
+	src: local('☺'), url('../fonts/ALBERTUS.woff') format('woff'), url('../fonts/ALBERTUS.ttf') format('truetype'), url('../fonts/ALBERTUS.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*Main style*/
+html {
+	scroll-behavior: smooth;
+}
+h2 {
+	font-size: 20px;
+	text-align: center
+}
+span{
+	font-family: 'ALBERTUS';
+	font-size: 45px;
+	color: red;
+}
+
+/*Header*/
+.header {
+	position: fixed;
+	max-width: 1180px;
+	top: 0;
+	left: center;
+	z-index: 50;
+}
+.container {
+	margin: 0px auto;
+	padding: 0px 0px;
+}
+.header:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(67,37,17, 0.7);
+	z-index: 2;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+.header_body {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 70px;
+	align-items: center;
+}
+.header_logo {
+	padding-left: 30px;
+	flex: 200px 0 0;
+	overflow: hidden;
+	position: relative;
+	z-index: 3
+}
+.header_logo img {
+	max-width: 100%;
+	display: block;
+
+}
+.header_burger {
+	display: none;
+}
+.header_menu {
+	padding-right: 25%;
+}
+.header_list {
+	display:flex;
+	position: relative;
+	z-index: 2;
+}
+.header_list li {
+	margin: 0px 0px 0px 20px;
+}
+.header_link {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+
+
+
+/*Content*/
+.content {
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+/*First*/
+.container_first {
+	max-width: 1180px;
+	width: 100%;
+}
+.header_background img{
+	position: relative;
+	width: 100%;
+}
+h1{
+	position: absolute;
+	font-size: 70px;
+	top: 7%;
+	left: 45%;
+	color: red;
+	z-index: 3;
+	font-family: ALBERTUS;
+}
+
+/*What is block*/
+.what {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.what_text {
+	padding-top: 20px;
+	width: 50%;
+}
+.what_text h2{
+	text-align: left;
+}
+
+
+
+.what_img {
+	width: 50%;
+}
+.what_img img{
+	width: 100%;	
+}
+
+
+
+/*Races*/
+.races {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: brown;	
+}
+.name {
+	text-align: center
+}
+.human {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.human_pic {
+	width: 100%;
+}
+.human_pic img {
+	width: 100%;
+}
+.human_text {}
+.elf {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;	
+}
+.elf_pic {
+	width: 100%;
+}
+.elf_pic img{
+	width: 100%;
+}
+.elf_text {}
+.dwarf {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.dworf_pic {
+	width: 100%;
+}
+.dworf_pic img{
+	width: 100%;
+}
+.dwarf_text {}
+
+
+/*History*/
+
+.history {
+	display: flex;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.history_img {
+	width: 50%
+}
+.history_img img {
+	width: 100%;
+}
+.history_text {
+	width: 50%
+}
+.history_text h2 {
+	text-align: left;
+}
+
+/*Classes*/
+.classes {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: brown;
+}
+.warrior {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.warrior_pic {
+	width: 100%;
+}
+.warrior_pic {
+	width: 100%;
+}
+.warrior_text {}
+.wizard {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.wizard_pic {
+	width: 100%;
+}
+.wizaed_pic img {
+	width: 100%;
+}
+.wizard_text {}
+.archer {
+	padding-left: 0.5%;
+	width: 33%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.archer_pic {
+	width: 100%;
+}
+.archer_pic img {
+	width: 100%;
+}
+.archer_text {}
+
+/*Attributes*/
+.attributes {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.name {}
+.character {
+	width: 50%;
+	display: inline-block;
+	vertical-align: bottom;
+
+}
+.character_pic {
+	width: 100%;
+	border-radius: 50%;
+}
+.character_text {
+}
+.character_text {
+	text-align: center;
+}
+.dice {
+	width: 49%;
+	display: inline-block;
+	vertical-align: bottom;
+}
+.dice_pic {
+	width: 100%;
+	border-radius: 50%;
+}
+.dice_text {}
+
+/*Footer*/
+
+.footer {
+	max-width: 1180px;
+	padding-left: 10%;
+	padding-right: 10$;
+	height: 40px;
+	width: 100%;
+	padding-top: 10px;
+	background-color: rgba(67,37,17,1.0);
+
+}
+.footer_body {
+	display: flex;
+}
+.footer_text {
+	margin-left: 40%;
+	display: block;
+	
+}
+.marty {
+	height: 25px;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.marty img {
+
+}
+
+
+
+/*Adaptive*/
+
+@media (max-width: 767px) {
+	body.lock {
+		overflow: hidden;
+	}
+	/*Header*/
+	.header {
+		position: fixed;
+		max-width: 1180px;
+		top: 0;
+		left: center;
+		z-index: 50;
+	}
+	.container {
+		margin: 0px auto;
+		padding: 0px 10px;
+	}
+	.header:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(67,37,17, 0.7);
+		z-index: 2;
+		border-bottom-right-radius: 0px;
+		border-bottom-left-radius: 0px;
+	}
+	.header_body {
+		height: 50px;
+
+	}
+	.header_logo {
+		padding-left: 5px;
+		flex: 100px 0 0;
+	}
+	.header_logo img {
+		max-width: 100%;
+		display: block;
+	}
+
+	
+
+
+	.content {
+		padding-left: 0%;
+		padding-right: 0%;
+	}
+
+	h1{
+		font-size: 30px;
+		left: 40%;
+	}
+	.what {
+		padding-right: 10px;
+		padding-left: 10px;
+		display: block;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.what_text {
+		padding-top: 10px;
+		width: 100%;
+	}
+	.what_img {
+		width: 100%;
+	}
+
+
+	.races {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: brown;	
+	}
+	.human {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;
+	}
+	.elf {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;	
+	}
+	.dwarf {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;
+	}
+	
+
+	.history {
+		display: block;
+		padding: 10px;
+	}
+	.history_img {
+		width: 100%
+	}
+	.history_text {
+		width: 100%
+	}
+
+
+
+
+	.classes {
+		padding: 10px;
+	}
+	.warrior {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;
+	}
+	.wizard {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;
+	}
+	.archer {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 100%;
+		display: block;
+	}
+
+
+
+
+
+	.attributes {
+		padding: 10px;
+	}
+	.character {
+		width: 100%;	
+		display: block;
+
+	}
+	.character_pic {
+		width: 100%;
+		border-radius: 50%;
+	}
+	.dice {
+		width: 100%;
+		display: block;
+	}
+
+
+
+	.header_burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 3;
+	}
+	.header_burger span {
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+	}
+	.header_burger:before,
+	.header_burger:after {
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+		
+	}
+	.header_burger:before {
+		top: 0;
+	
+	}
+	.header_burger:after {
+		bottom: 0;
+	}
+	.header_burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header_burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.header_burger.active span {
+		transform: scale(0);
+	}
+
+
+
+	.footer {
+		max-width: 1180px;
+		padding-left: 10%;
+		padding-right: 10$;
+		height: 40px;
+		width: 100%;
+		padding-top: 10px;
+		background-color: rgba(67,37,17,1.0);
+
+	}
+	.footer_body {
+		display: flex;
+	}
+	.footer_text {
+		margin-left: 20%;
+		display: block;
+	
+	}
+
+
+	/*Menu building*/
+	.header_menu {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: #432511; 
+	}
+
+	.header_menu.active {
+		top: 0;
+	}
+	.header_list{
+		display: block;
+	}
+	.header_list li {
+		margin: 60px 0px 50px 20px;
+	}
+	.header_link {
+		font-size: 24px;
+	}
+	
+}
+
